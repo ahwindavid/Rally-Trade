@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* header */
+.logo {
+  text-align: center;
+}
+.navbar ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: black;
+}
+.navbar li {
+  list-style-type: none;
+  padding: 1rem;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar-logo {
+  flex: 0.6;
+  font-size: 1rem;
+  user-select: none;
+}
+.navbar-links a {
+  color: black;
+  text-decoration: none;
+}
+li:nth-child(11) {
+  margin-right: auto;
+}
+
+.navbar-toggle {
+  display: none;
+}
+.header-center-divider {
+  height: 15px;
+  width: 20px;
+  border-left: 3px solid black;
+}
+
+/* main-content */
+.main {
+  width: 100%;
+}
+.main-position {
+  margin-bottom: 150px;
+  background-image: url(./img/daniil-vnoutchkov-0jH9HOxPBKw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 70vh;
+}
+
+/* form */
+.main-form {
+  max-width: 450px;
+  left: 20%;
+  color: black;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.main-form-heading {
+  text-align: center;
+}
+.main-signup {
+  max-width: 550px;
+  min-height: 800px;
+  background-color: white;
+  border-radius: 40px;
+  color: black;
+  border: 3px solid black;
+}
+
+.main-signup-header {
+  border: none;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.main-signup-header-registration {
+  width: 50%;
+  border-top-left-radius: 40px;
+  border-bottom: none;
+}
+.main-signup-header-login {
+  width: 50%;
+}
+input::placeholder {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.main-signup-input input {
+  width: 85%;
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 30px;
+  padding-left: 0;
+  margin-left: 25px;
+  background-color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.main-signup-input input:focus {
+  outline: none;
+}
+#main-signup-footer-checkbox {
+  margin-left: 5px;
+}
+.main-signup-footer-instruction {
+  display: flex;
+  margin-top: 20px;
+}
+.main-signup-footer-check {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+.main-signup-footer-names {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.main-signup-footer-account {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+}
+.main-signup-footer-currency {
+  display: flex;
+  margin-right: 80px;
+  align-items: center;
+}
+.main-signup-button {
+  text-align: center;
+  margin-top: 20px;
+}
+.main-signup-button input {
+  text-align: center;
+  background-color: green;
+  border-radius: 20px;
+  padding: 5px;
+}
+.account {
+  margin-right: 20px;
+}
+.currency {
+  margin-left: 20px;
+}
+
+/* Icons */
+.main-icon {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+  margin-bottom: 450px;
+}
+.main-icon i {
+  color: gold;
+}
+.main-icon i:before {
+  font-size: 70px;
+}
+.main-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maincon {
+  width: 90px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+/* Information */
+.main-info {
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+  align-items: center;
+}
+.main-info-divider {
+  height: 300px;
+  width: 1px;
+  display: block;
+  margin: 0;
+  border-left: 1px solid black;
+}
+.main-info-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+}
+.main-info-address {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+footer h2 {
+  color: red;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+.nav-toggle {
+  line-height: 60px;
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: black;
+  display: none;
+}
+
+/* media-queries */
+
+@media screen and (min-width: 2300px) {
+  .main-icons {
+    margin-right: 100px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  li:nth-child(15) {
+    margin-right: 100px;
+  }
+  .navbar-logo {
+    margin-left: 100px;
+  }
+  .main-form {
+    margin-left: 250px;
+    padding-top: 500px;
+  }
+}
+@media screen and (max-width: 2300px) {
+  .main-icon {
+    margin-top: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .main-icons {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .navbar-logo {
+    flex: 1;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+  }
+  .navbar li {
+    transition: 1s;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-links {
+    width: 100%;
+    display: none;
+    text-align: center;
+    background-color: black;
+  }
+  .active {
+    display: block;
+  }
+  .header-center-divider {
+    display: none;
+  }
+  .logo {
+    max-width: 150px;
+  }
+  .main-form {
+    display: block;
+    margin: 0 auto;
+    padding-top: 500px;
+  }
+  .main-icon {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main-info {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    text-align: center;
+  }
+  .main-info-divider {
+    height: 1px;
+    width: 300px;
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid black;
+  }
+  .main-info-address {
+    text-align: center;
+  }
+  .main-signup-footer-names {
+    font-size: 14px;
+  }
+  .main-signup-footer-currency {
+    margin-right: 20px;
+    align-items: center;
+  }
+  .logo {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-height: 1024px) {
+  .main-icon {
+    padding-top: 400px;
+  }
+  .main-form {
+    padding-top: 200px;
+  }
+}
